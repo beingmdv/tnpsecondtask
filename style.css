@@ -1,0 +1,315 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: #e2ddec;
+
+    font-family: sans-serif;
+}
+
+
+.navbar{
+  
+   display: flex;
+   flex-wrap: wrap;
+   
+   align-items: center ;
+   
+    background-color: white;
+    
+    justify-content: space-around;
+    box-sizing: border-box;
+
+    
+}
+
+
+
+.lists>ul{
+    display: flex;
+    
+    flex-direction: row;
+    list-style: none;
+   
+    background-color: inherit;
+    font: 400;
+
+}
+.navright{
+    display: flex;
+    align-items: center;
+    background-color: inherit;
+    
+}
+.login{
+    padding: 10px;
+    padding-right: 30px;
+    background-color: inherit ;
+    border: 1px solid blue;
+    background-color: blue;
+    color: white;
+   margin: 8px;
+   border-radius: 5px;
+
+}
+.lists>ul>li{
+    background-color: inherit;
+    background-color: white;
+    padding: 20px;
+}
+
+
+.demo{
+    border: 1px solid blue;
+    padding: 10px;
+    background-color: aqua;
+    border-radius: 12px;
+}
+
+.lists>ul>li:hover {
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.login:hover,
+.demo:hover,
+.btnred:hover {
+    opacity: 0.9;
+    transform: scale(1.03);
+    transition: 0.3s ease;
+}
+
+
+/* header part  */
+.header{
+    text-align: center;
+    padding: 154px;
+
+}
+.header>h1{
+    font-size: 54px;
+    color: rgb(5, 38, 76);
+}
+.header>h2{
+    font-size: 40px;
+    color: orangered;
+}
+.tagline{
+    padding: 33px;
+    /* padding-bottom: 12px; */
+    font-size: 28px;
+    color: rgb(0, 86, 14);
+}
+
+
+
+
+/* speaker part  */
+
+.nikhil {
+display: flex;
+padding-bottom: 34px;
+align-items: center;
+justify-content: space-between;
+background-color: aqua;
+gap: 20px;
+border: 4px solid ;
+border-image: linear-gradient(to right, red , orange , yellow , green , cyan , blue , violet)1;
+}
+
+.photo {
+width: 40%;
+/* flex-shrink: 0; */
+}
+
+.photo img {
+width: 100%;
+height: auto;
+object-fit: contain;
+display: block;
+
+}
+
+
+.text{
+
+width: 60%  ;
+color: darkgreen;
+/* background-color: aqua; */
+background-color: aqua;
+}
+.text>p , .text>div{
+    
+    background-color: aqua;
+
+}
+
+.guestname{
+    font-size: 32px;
+    border: 1px solid yellow ;
+    background-color: rgb(212, 212, 23);
+    width: fit-content;
+    padding: 10px;
+    color: rgb(32, 17, 232);
+    
+    border-radius: 10%;
+    
+}
+
+
+.enroll{
+    text-align: center;
+    padding: 22px;
+    padding-top: 85px;
+    font-size: large;
+}
+.enroll>span{
+    font-size: 30px;
+}
+
+
+/* hero section  */
+
+.hero{
+    padding:44px;
+}
+.hero input{
+    /* padding: 7px 107px 8px 14px; */
+
+    font-size: 32px;
+    border-radius: 4px;
+    background-color: darkseagreen;
+    color: rgb(248, 17, 17);
+    border: 1px solid rgba(255, 0, 0, 0.7); 
+}
+    
+
+::placeholder   {
+    color: rgba(255, 0, 0, 0.5);
+    
+}
+
+.herobuttons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+   
+    align-items:center;
+    gap: 6px;
+    
+}
+.hero>button{
+    display: block;
+    margin: auto;
+    margin-top: 10px ;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    border: 3px solid yellow;
+    background-color: #7fb18b;
+    font-weight: bolder;
+    color: yellow;
+}
+
+
+
+
+/* footer */
+.footer {
+    background: linear-gradient(to right, #240b36, #c31432);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+    font-size: 16px;
+}
+
+.aboutcontent p {
+    margin: 10px 0;
+}
+
+.links {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.links a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.links a:hover {
+    text-decoration: underline;
+    color: #04ff42;
+}
+
+
+/* for making it responsive  */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .lists > ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navright {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .header {
+        margin-top: 20px;
+        padding: 20px;
+        font-size: 90%;
+    }
+
+    .header h1 {
+        font-size: 30px;
+    }
+
+    .header h2 {
+        font-size: 24px;
+    }
+
+    .tagline {
+        font-size: 18px;
+        padding: 10px;
+    }
+
+    .hero input,
+    .hero button {
+        width: 90%;
+        font-size: 16px;
+        padding: 10px;
+    }
+
+    .herobuttons {
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .nikhil {
+        flex-direction: column;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .photo, .text {
+        width: 100%;
+    }
+}
+
+
+
+
